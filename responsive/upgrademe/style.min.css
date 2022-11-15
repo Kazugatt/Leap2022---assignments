@@ -127,10 +127,10 @@ footer a {
     }
 }   
 @media screen and (max-width: 600px) {
-    .nav a{
+    .nav>ul>li{
         display: none;
-    }
-    header ul li .bars{
+    } 
+    header ul li.bars{
         display: block;
     }
     .row>*{
