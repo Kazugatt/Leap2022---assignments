@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <title>Document</title>
+</head>
+
+<body class="min-vh-100 d-flex align-items-center justify-content-center bg-secondary">
+  <div class="card col-4" style="width: 400px;">
+    <style>
+      .password-checker .list-group-item {
+        display: flex;
+        justify-content: space-between;
+      }
+    </style>
+
+    <ul class="list-group mt-3 password-checker">
+      <li class="list-group-item"><span>Tom useg</span><input type="checkbox" id="upper" disabled="disabled" /></li>
+      <li class="list-group-item"><span>Jijig useg</span><input type="checkbox" id="lower" disabled="disabled" /></li>
+      <li></li>
+      <li class="list-group-item"><span>Too</span><input type="checkbox" id="digit" disabled="disabled" /></li>
+      <li class="list-group-item"><span>Tusgai temdegt</span><input type="checkbox" id="char" disabled="disabled" />
+      </li>
+      <li class="list-group-item"><span>Urt</span><input type="checkbox" id="length" disabled="disabled" /></li>
+
+    </ul>
+    <form class="card-body" onsubmit="signupSubmit();return false">
+      <div class="form-group">
+        <label for="email">Email address</label>
+        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+          else.</small>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" class="form-control" id="password" placeholder="Password">
+      </div>
+      <div class="form-group">
+        <label for="repassword">Password repeat</label>
+        <input type="password" class="form-control" id="repassword" placeholder="Repead your password">
+      </div>
+      <button type="submit" class="btn btn-primary w-100 mt-3">Submit</button>
+    </form>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="./signin.js"></script>
+</body>
+
+</html>
